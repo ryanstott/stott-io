@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+	<body>
+        <main class="home">
+            <aside class="sidebar">
+                <div class="cover">
+                    <h2>Hi, I'm Ryan!</h2>
+                    <p>I share my love of technology, with briefs and in-depth articles.</p>
+                    <div class="social">
+                        <a class="social-item twitter" href="https://twitter.com/ryanstott"><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+                        <a class="social-item linkedin" href="https://www.linkedin.com/in/ryanstott/"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </aside>
+            <div class="content">
+                {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}   
+                    <article class="feed">
+                        <div class="feed-calendar">
+                            <div class="feed-calendar-month">{{ .Date.Format "Jan" }}</div>
+                            <div class="feed-calendar-day">{{ .Date.Format "02" }}</div>
+                        </div>
+                        <h2 class="feed-title">{{ .Title }}</h2>
+                        <div class="feed-right">
+                            <div class="feed-length">{{ math.Round (div (countwords .Content) 220.0) }} min Read</div>
+                        </div>
+                        <a class="u-permalink" href="{{ .Permalink }}" aria-label="{{ .Title }}"></a>
+                    </article>
+                {{- end }}
+            </div>
+       </main>
+

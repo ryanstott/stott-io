@@ -1,0 +1,40 @@
+@media (max-width: 1345px) {
+
+    .cover {
+      text-align: center;
+    }
+  
+    main {
+      max-width: calc(640px + 8vw);
+    }
+  
+    main.home {
+      display: block;
+      max-width: calc(640px + 8vw);
+    }
+  
+    .stammytoc {
+      visibility: hidden;
+    }
+  }
+  
+  @media (max-width: 640px) {
+  
+    .cover {
+      text-align: center;
+    }
+  
+    main {
+      min-width: 630px;
+    }
+  
+   main.home {
+      display: block;
+      min-width: 630px;
+    }
+  
+    .stammytoc {
+      visibility: hidden;
+    }
+  }
+  

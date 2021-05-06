@@ -1,0 +1,19 @@
+
+name = "Artucino"
+license = "MIT"
+licenselink = "https://github.com/ryanstott/stott-io/blob/master/themes/artucino/LICENSE.md"
+description = ""
+homepage = "https://stott.io/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = ""
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
