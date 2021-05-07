@@ -151,7 +151,6 @@ aside.sidebar {
 
 .feed-calendar {
 	color: #d8dee9;
-	background: #505866;
 	padding: 0.4rem;
 	display: flex;
 	font-size: 0.7rem;
@@ -178,11 +177,17 @@ aside.sidebar {
 	font-weight: 600;
 }
 
-.feed-length {
+.feed-type {
 	color: #d8dee9;
 	font-size: 0.7rem;
-	white-space: nowrap;
+	padding: 4px 10px 4px 10px;
+	background: #505866;
+
+	p {
+		margin: 0;
+	}
 }
+
 
 .feed-right {
 	display: flex;
