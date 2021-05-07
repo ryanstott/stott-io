@@ -16,14 +16,14 @@
             <div class="content">
                 {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}   
                     <article class="feed">
+                        <h2 class="feed-title">{{ .Title }}</h2>
+                        <a class="u-permalink" href="{{ .Permalink }}" aria-label="{{ .Title }}"></a>
                         <div class="feed-calendar">
                             <div class="feed-calendar-month">{{ .Date.Format "Jan" }}</div>
                             <div class="feed-calendar-day">{{ .Date.Format "02" }}</div>
                         </div>
-                        <h2 class="feed-title">{{ .Title }}</h2>
-                        <a class="u-permalink" href="{{ .Permalink }}" aria-label="{{ .Title }}"></a>
                         <div class="feed-type">
-                            <p>Brief</p>
+                            <p>{{ .Type }}</p>
                         </div>
                     </article>
                 {{- end }}

@@ -2,3 +2,6 @@ baseURL = "https://stott.io/"
 languageCode = "en-us"
 title = "Stott"
 theme = "artucino"
+[params]
+    # what sections or categories are displayed on the home page
+    mainSections = ["article", "brief"]

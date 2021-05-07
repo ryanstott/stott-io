@@ -117,15 +117,9 @@ aside.sidebar {
 	display: flex;
 	overflow: hidden;
 	padding: 1rem;
+	margin-bottom: 1rem;
 	position: relative;
-	
-	+ {
-		.feed {
-			&:hover {
-				border-color: darken(#81a1c1, 30%);
-			}
-		}
-	}
+	border: 2px solid lighten(#2e3440, 5%);
 	&:hover {
 		.feed-title {
 			color: lighten(#81a1c1, 20%);
@@ -140,6 +134,7 @@ aside.sidebar {
 		}
 	background: #3d4555;
 	transition: all .8s;
+	border-color: lighten(#2e3440, 10%);
 	}
 }
 
@@ -149,7 +144,7 @@ aside.sidebar {
 	display: flex;
 	font-size: 0.7rem;
 	font-weight: 800;
-	margin-right: 1.5rem;
+	margin-right: 1rem;
 	white-space: nowrap;
 }
 
