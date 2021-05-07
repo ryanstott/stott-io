@@ -102,15 +102,9 @@ aside.sidebar {
 	}
 }
 
-.social-item.twitter {
+.social-item.twitter, .social-item.linkedin{
 	&:hover {
-		color: #00ACEE;
-	}
-}
-
-.social-item.linkedin {
-	&:hover {
-		color: #2867b2;
+		color: #81a1c1;
 	}
 }
 
