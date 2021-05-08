@@ -32,6 +32,7 @@ body {
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	grid-area: content;
 	padding: 30px;
+	margin-top: auto;
 	margin-bottom: auto;
 	border-radius: 8px;
 }
@@ -70,7 +71,6 @@ main {
 aside.sidebar {
 	grid-area: sidebar;
 	margin-bottom: auto;
-	margin-top: auto;
 	padding: 30px;
 }
 
