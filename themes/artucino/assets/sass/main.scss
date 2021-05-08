@@ -14,7 +14,7 @@ html {
 body {
 	-webkit-font-smoothing: antialiased;
 	background: #1a1f23;
-	color: rgb(236, 239, 244);
+	color: #fff;
 	font-family: "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 1.1rem;
 	line-height: 1.6;
@@ -32,7 +32,6 @@ body {
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	grid-area: content;
 	padding: 30px;
-	margin-top: auto;
 	margin-bottom: auto;
 	border-radius: 8px;
 }
@@ -95,15 +94,9 @@ aside.sidebar {
   
 }
 
-.social .social-item {
+.social-item {
 	color: #fFF;
 	padding-right:5px;
-	&:hover {
-		color: #000;
-	}
-}
-
-.social-item.twitter, .social-item.linkedin{
 	&:hover {
 		color: #81a1c1;
 	}
@@ -156,15 +149,17 @@ aside.sidebar {
 
 .feed-title {
 	flex-grow: 1;
-	font-size: 0.8rem;
-	font-weight: 400;
 	margin-bottom: 0;
 	overflow: hidden;
 	padding-right: 1rem;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+
+}
+
+.feed-title h2 {
 	color: #a6b3bd;
+	margin: 0;
 	font-weight: 600;
+	font-size: 0.8rem;
 }
 
 .feed-type {
@@ -233,6 +228,11 @@ p.description {
 	border-bottom: 1px solid rgba(229, 233, 240, 0.2);
 	margin-bottom: 20px;
 	padding-bottom: 20px;
+}
+
+p.tagline {
+	color: #c1c1c1;
+	font-size: .8rem;
 }
 
 .blue-dot {
