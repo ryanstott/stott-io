@@ -56,11 +56,11 @@
   }
   
   .single {
-	display: grid;
-	gap: 10%;
-	grid-template-areas: "menu content other";
-	grid-template-columns: 5% auto 5%;
-	max-width: calc(1130px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 670px;
+	padding: 30px;
   }
   
   .inner.small {
@@ -230,6 +230,7 @@
   }
   
   article {
+	  width: 100%;
 	h1 {
 	  font-weight: 700;
 	  font-size: 43px;
