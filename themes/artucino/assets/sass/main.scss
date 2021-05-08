@@ -28,7 +28,7 @@ body {
 }
 
 .content {
-	background-color: #2e3440;
+	background-color: #2b333a;
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	grid-area: content;
 	padding: 30px;
@@ -77,13 +77,14 @@ aside.sidebar {
 
 .cover {
 	h2 {
-		color: rgb(236, 239, 244);
+		color: #fff;
 		font-weight: 800;
 		margin: 0;
   }
   
 	p {
-		color: #c1c1c1;
+		color: #fff;
+		opacity: .8;
   }
   
 	i {
@@ -119,10 +120,10 @@ aside.sidebar {
 	padding: 1rem;
 	margin-bottom: 1rem;
 	position: relative;
-	border: 2px solid lighten(#2e3440, 5%);
+	border: 2px solid #333d45;
 	&:hover {
 		.feed-title {
-			color: lighten(#81a1c1, 2%);
+			color: lighten(#a6b3bd, 2%);
 		}
 
 		.feed-length {
@@ -132,9 +133,9 @@ aside.sidebar {
 		.feed-calendar {
 			color: lighten(#d8dee9, 2%);
 		}
-	background: darken(#2e3440, 1%);
-	transition: all .25s;
-	border-color: lighten(#2e3440, 6%);
+		background: #333d45;
+		transition: all .25s;
+		border-color: lighten(#333d45, 8%);
 	}
 }
 
@@ -162,7 +163,7 @@ aside.sidebar {
 	padding-right: 1rem;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #81a1c1;
+	color: #a6b3bd;
 	font-weight: 600;
 }
 
