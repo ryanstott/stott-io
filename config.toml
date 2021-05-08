@@ -1,4 +1,4 @@
-baseURL = "https://stott.io/"
+baseURL = "https://dev.stott.io/"
 languageCode = "en-us"
 title = "Stott"
 theme = "artucino"
