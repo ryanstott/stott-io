@@ -60,15 +60,15 @@
 	gap: 10%;
 	grid-template-areas: "menu content other";
 	grid-template-columns: 5% auto 5%;
-	max-width: calc(1130px + 8vw);
+	max-width: calc(1130px);
   }
   
   .inner.small {
-	max-width: calc(640px + 8vw);
+	max-width: calc(640px);
   }
   
   .inner.medium {
-	max-width: calc(750px + 8vw);
+	max-width: calc(750px);
   }
   
   aside.sidebar {
@@ -133,7 +133,7 @@
   }
   
   .feed-calendar {
-	color: #d8dee9;
+	color: #a6b3bd;
 	padding: 0.4rem;
 	display: flex;
 	font-size: 0.7rem;
@@ -155,7 +155,7 @@
   }
   
   .feed-title h2 {
-	color: #a6b3bd;
+	color: #81a1c1;
 	margin: 0;
 	font-weight: 600;
 	font-size: 0.8rem;
@@ -163,6 +163,7 @@
   
   .feed-type {
 	color: #d8dee9;
+	opacity: .8;
 	font-size: 0.7rem;
 	padding: 4px 10px 4px 10px;
 	background: #505866;
